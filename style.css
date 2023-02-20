@@ -50,6 +50,10 @@ aside .large-gap {
     margin-top: 32px;
 }
 
+aside a:hover {
+    text-decoration: underline #ea580c 4px;
+}
+
 header {
     grid-area: header;
 }
