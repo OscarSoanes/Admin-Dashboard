@@ -63,6 +63,19 @@ aside a:hover {
     padding: 1rem;
 }
 
+input[type=search] {
+    border: 0px;
+    border-radius: 1rem;
+    padding: 8px 8px;
+
+    background-color: #c5cbe0;
+    color: black;
+}
+
+input[type=search]:focus {
+    outline: 2px solid #ea580c;
+}
+
 img {
     width: 50px;
 }
