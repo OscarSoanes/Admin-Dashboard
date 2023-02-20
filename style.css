@@ -259,3 +259,7 @@ section:last-child > .side-container > .trending > img {
 .trending > p:last-of-type {
     grid-area: project;
 }
+
+.project-container, .side-container {
+    box-shadow: 2px 2px 2px 2px #a9a9a9;
+}
