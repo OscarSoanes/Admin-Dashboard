@@ -4,9 +4,15 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 .container {
     display: grid;
+    height: 100%;
     grid-template-columns: 300px 1fr;
+    grid-template-rows: 150px 1fr;
     grid-template-areas: 
     "aside header"
     "aside main";
@@ -14,4 +20,12 @@
 
 aside {
     grid-area: aside;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
 }
