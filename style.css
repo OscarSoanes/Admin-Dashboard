@@ -60,7 +60,6 @@ aside a:hover {
     align-items: center;
     grid-template-columns: 1.5rem minmax(300px, 1fr) minmax(max-content, 7rem) minmax(max-content, 200px);
     gap: 16px;
-    box-shadow: 0px 1px 3px 0px #454545;
     padding: 1rem 3rem;
 }
 
@@ -145,12 +144,14 @@ main {
     display: grid;
     padding: 1rem 2rem;
     grid-template-columns: 2fr 1fr;
-    /* gap: 1rem; */
+    box-shadow: 0px 1px 3px 0px #454545 inset;
+    background-color: #d6d6d6;
+    gap: 1rem;
 }
 
 main > section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 1rem;
     grid-auto-rows: max-content;
 }
@@ -164,6 +165,8 @@ section > h2 {
 section > .project-container {
     display: grid;
     grid-template-rows: max-content max-content max-content;
-    background-color: red;
+    background-color: white;
+    background: linear-gradient(to right, #ea580c, #ea580c 12px, white 12px);
+    border-radius: 1rem;
     padding: 2rem;
 }
