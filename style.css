@@ -116,8 +116,28 @@ header span:nth-child(3) {
     font-size: 2rem;
 }
 
-nav {
+header nav {
     grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-left: 20px; 
+}
+
+nav button {
+    background-color: #6d28d9;
+    color: whitesmoke;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 2rem;
+    padding: 12px 24px;
+    
+}
+
+nav button:hover {
+    background-color: whitesmoke;
+    outline: 3px solid #6d28d9;
+    color: #6d28d9;
 }
 
 main {
