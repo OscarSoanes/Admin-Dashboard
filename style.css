@@ -18,8 +18,36 @@ html, body {
     "aside main";
 }
 
-aside {
+.container aside {
     grid-area: aside;
+    display: grid;
+    align-items:center;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(11, max-content);
+    column-gap: 16px;
+    row-gap: 32px;
+
+    padding: 1rem;
+    font-size: 24px;
+    background-color: #6d28d9;
+    color: #f5f5f5;
+}
+
+aside h1, aside span:first-child {
+    font-size: 32px;
+}
+
+aside h1 {
+    font-weight: 700;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+}
+
+aside .large-gap {
+    margin-top: 32px;
 }
 
 header {
