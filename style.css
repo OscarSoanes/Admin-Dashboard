@@ -12,7 +12,7 @@ html, body {
     display: grid;
     height: 100%;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 200px 1fr;
     grid-template-areas: 
     "aside header"
     "aside main";
@@ -28,13 +28,13 @@ html, body {
     row-gap: 32px;
 
     padding: 1rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     background-color: #6d28d9;
     color: #f5f5f5;
 }
 
 aside h1, aside span:first-child {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 aside h1 {
@@ -54,8 +54,90 @@ aside a:hover {
     text-decoration: underline #ea580c 4px;
 }
 
-header {
+.container header {
     grid-area: header;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5rem minmax(300px, 1fr) minmax(max-content, 7rem) minmax(max-content, 200px);
+    gap: 16px;
+    box-shadow: 0px 1px 3px 0px #454545;
+    padding: 1rem 3rem;
+}
+
+input[type=search] {
+    border: 0px;
+    border-radius: 1rem;
+    padding: 8px 8px;
+
+    background-color: #c5cbe0;
+    color: black;
+}
+
+input[type=search]:focus {
+    outline: 2px solid #ea580c;
+}
+
+header span:nth-child(3) {
+    justify-self: end;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px;
+    align-items: center;
+}
+
+.profile > img {
+    width: 48px;
+    border-radius: 100%;
+}
+
+.welcome {
+    grid-column: span 2;
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content 1fr;
+    column-gap: 16px;
+    font-weight: 700;
+}
+
+.welcome > img {
+    grid-row: span 2;
+    width: 96px;
+    border-radius: 100%;
+}
+
+.welcome > p {
+    align-self: self-end;
+}
+
+.welcome > h2 {
+    font-size: 2rem;
+}
+
+header nav {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-left: 20px; 
+}
+
+nav button {
+    background-color: #6d28d9;
+    color: whitesmoke;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 2rem;
+    padding: 12px 24px;
+    
+}
+
+nav button:hover {
+    background-color: whitesmoke;
+    outline: 3px solid #6d28d9;
+    color: #6d28d9;
 }
 
 main {
