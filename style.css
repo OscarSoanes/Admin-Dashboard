@@ -142,4 +142,7 @@ nav button:hover {
 
 main {
     grid-area: main;
+    display: grid;
+    padding: 1rem 2rem;
+    grid-template-columns: 2fr 1fr;
 }
