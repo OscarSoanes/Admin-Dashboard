@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+}
+
+aside {
+    grid-area: aside;
+}
