@@ -12,7 +12,7 @@ html, body {
     display: grid;
     height: 100%;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 200px 1fr;
     grid-template-areas: 
     "aside header"
     "aside main";
@@ -28,13 +28,13 @@ html, body {
     row-gap: 32px;
 
     padding: 1rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     background-color: #6d28d9;
     color: #f5f5f5;
 }
 
 aside h1, aside span:first-child {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 aside h1 {
@@ -54,8 +54,25 @@ aside a:hover {
     text-decoration: underline #ea580c 4px;
 }
 
-header {
+.container header {
     grid-area: header;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5rem 4fr 1.5rem 3fr;
+    gap: 16px;
+    padding: 1rem;
+}
+
+img {
+    width: 50px;
+}
+
+.welcome {
+    grid-column: span 2;
+}
+
+nav {
+    grid-column: span 2;
 }
 
 main {
